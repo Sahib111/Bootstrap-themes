@@ -20,12 +20,16 @@
 <style>
 
 .startup {
-z-index:1
+display:block;
+z-index:1;
 }
 
 .startup::before {
 content:"";
 z-index:-10;
+position:relative;
+width:100vw;
+height:100vh;
 background:url("./img/naked-g6ac239d64_1920.jpg");
 background-size:cover;
 opacity:0.5;
