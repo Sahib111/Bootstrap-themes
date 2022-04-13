@@ -21,15 +21,18 @@
 
 .startup {
 display:block;
+background:transparent;
 z-index:1;
 }
 
 .startup::before {
 content:"";
 z-index:-10;
-position:relative;
+position:absolute;
 width:100vw;
 height:100vh;
+top:0;
+left:0;
 background:url("./img/naked-g6ac239d64_1920.jpg");
 background-size:cover;
 opacity:0.5;
