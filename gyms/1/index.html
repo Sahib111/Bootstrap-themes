@@ -20,8 +20,15 @@
 <style>
 
 .startup {
+z-index:1
+}
+
+.startup::before {
+content:"";
+z-index:-10;
 background:url("./img/naked-g6ac239d64_1920.jpg");
 background-size:cover;
+opacity:0.5;
 }
 
 .footer-align ul li {
