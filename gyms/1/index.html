@@ -21,13 +21,19 @@
 <style>
 
 .preload {
-
+width:100vw
+height:100vh;
 }
 
 .startup {
 display:block;
 background:transparent;
 z-index:1;
+transform-origin: bottom left;
+-webkit-transform: skew(20deg); 
+-moz-transform: skew(20deg); 
+-o-transform: skew(20deg);
+transform: skew(20deg);
 }
 
 .startup::before {
@@ -41,11 +47,6 @@ left:0;
 background:url("./img/naked-g6ac239d64_1920.jpg");
 background-size:cover;
 opacity:0.5;
-transform-origin: bottom left;
--webkit-transform: skew(20deg); 
--moz-transform: skew(20deg); 
--o-transform: skew(20deg);
-transform: skew(20deg);
 }
 
 .footer-align ul li {
