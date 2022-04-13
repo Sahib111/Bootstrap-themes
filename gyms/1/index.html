@@ -22,17 +22,14 @@
 .startup {
 width:100vw;
 height:100vh;
-position:absolute;
 transform-origin: bottom right;
 -ms-transform: skew(20deg, 0deg);
 -webkit-transform: skew(20deg, 0deg);
 transform: skew(20deg, 0deg);
 }
 
-.startup::before {
+.startup:before {
 content:"";
-top:0;
-left:0;
 position:relative;
 width:100%;
 height:100%;
@@ -54,8 +51,8 @@ padding:3px;
 </preloader>
 
 <startup>
-<div class="container-fluid overflow-hidden">
-<div class="startup starting">
+<div class="container-fluid overflow-hidden startup">
+<div class="">
 <div class="row">
 <div class="">
 </div>
