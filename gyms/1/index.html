@@ -20,9 +20,14 @@
 
 <style>
 
+.preloader {
+index:1
+background:#fff;
+}
+
 .preload {
-width:100vw
-height:100vh;
+z-index:10;
+background:url("./img/f847f340400159.577dcf3411820.gif");
 display:block;
 }
 
@@ -64,8 +69,10 @@ padding:3px;
 <body>
 
 <preloader>
-<div class="container-fluid preload bg-white position-fixed top-50 start-50 translate-middle">
-<i class="fa-duotone fa-dumbbell"></i></div>
+<div class="container-fluid bg-white preloader">
+<div class="preload position-absolute top-50 start-50 translate-middle">
+</div>
+</div>
 </preloader>
 
 <startup>
