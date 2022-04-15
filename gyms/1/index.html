@@ -21,19 +21,18 @@
 <style>
 
 .preloader {
-position: fixed;
-width: 200px;
-height: 200px;
+width: 300px;
+height: 300px;
 z-index: 1000;
 overflow: visible;
-background:#fff url("./img/dumbbell-solid.svg") no-repeat center center;
+background:url("./img/dumbbell-solid.svg") no-repeat center center;
 display:block;
 }
 
 .preloader::before {
 content:"";
 z-index:-8;
-position:absolute;
+position:relative;
 width:100vw;
 height:100vh;
 top:0;
@@ -80,7 +79,7 @@ padding:3px;
 
 <preloader>
 <div class="preloader">
-<div class="position-absolute top-50 start-50 translate-middle text-white py-1 px-1">Loading....</div>
+<div class="text-white py-1 px-1">Loading....</div>
 </div>
 </preloader>
 
