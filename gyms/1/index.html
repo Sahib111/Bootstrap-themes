@@ -20,7 +20,7 @@
 
 <style>
 
-.navbar {
+.navbar1 {
   z-index:300;
   font-size: 18px;
   background: #000;
@@ -28,30 +28,30 @@
   padding-bottom: 10px;
 }
 
-.main-nav {
+.main-nav1 {
   list-style-type: none;
   display: none;
 }
 
-.nav-links,
-.logo {
+.nav-links1,
+.logo1 {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.main-nav li {
+.main-nav1 li {
   text-align: center;
   margin: 15px auto;
 }
 
-.logo {
+.logo1 {
   display: inline-block;
   font-size: 22px;
   margin-top: 10px;
   margin-left: 20px;
 }
 
-.navbar-toggle {
+.navbar-toggle1 {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -60,12 +60,12 @@
   font-size: 24px;
 }
 
-.active {
+.active1 {
   display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .navbar {
+  .navbar1 {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
@@ -73,31 +73,31 @@
     align-items: center;
   }
 
-  .main-nav {
+  .main-nav1 {
     display: flex;
     margin-right: 30px;
     flex-direction: row;
     justify-content: flex-end;
   }
 
-  .main-nav li {
+  .main-nav1 li {
     margin: 0;
   }
 
-  .nav-links {
+  .nav-links1 {
     margin-left: 40px;
   }
 
-  .logo {
+  .logo1 {
     margin-top: 0;
   }
 
-  .navbar-toggle {
+  .navbar-toggle1 {
     display: none;
   }
 
-  .logo:hover,
-  .nav-links:hover {
+  .logo1:hover,
+  .nav-links1:hover {
     color: rgba(255, 255, 255, 1);
   }
 }
@@ -169,26 +169,26 @@ padding:3px;
 </preloader>
 
 <navbar>
-  <nav class="navbar">
-    <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
+  <nav class="navbar1">
+    <span class="navbar-toggle1" id="js-navbar-toggle1">
+            <i class="fa-duotone fa-bars-sort"></i>
         </span>
-    <a href="#" class="logo">logo</a>
-    <ul class="main-nav" id="js-menu">
+    <a href="#" class="logo1">logo</a>
+    <ul class="main-nav1" id="js-menu1">
       <li>
-        <a href="#" class="nav-links">Home</a>
+        <a href="#" class="nav-links1">Home</a>
       </li>
       <li>
-        <a href="#" class="nav-links">Products</a>
+        <a href="#" class="nav-links1">Products</a>
       </li>
       <li>
-        <a href="#" class="nav-links">About Us</a>
+        <a href="#" class="nav-links1">About Us</a>
       </li>
       <li>
-        <a href="#" class="nav-links">Contact Us</a>
+        <a href="#" class="nav-links1">Contact Us</a>
       </li>
       <li>
-        <a href="#" class="nav-links">Blog</a>
+        <a href="#" class="nav-links1">Blog</a>
       </li>
     </ul>
   </nav>
@@ -279,11 +279,11 @@ $(".preloader").fadeOut(2000);
 },3000);
 });
 
-let mainNav = document.getElementById("js-menu");
-let navBarToggle = document.getElementById("js-navbar-toggle");
+let mainNav = document.getElementById("js-menu1");
+let navBarToggle = document.getElementById("js-navbar-toggle1");
 
 navBarToggle.addEventListener("click", function() {
-mainNav.classList.toggle("active");
+mainNav.classList.toggle("active1");
 });
 
 
