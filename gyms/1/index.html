@@ -58,7 +58,7 @@
 }
 
 .navbar a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
@@ -157,24 +157,19 @@
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
         transform: rotate(45deg);
-        
+        background:#000!important;
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
         transform: scaleY(0);
-        
+        background:#000!important;
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
         transform: rotate(-45deg);
+        background:#000!important;
     }
 
-}
-
-@media (max-width: 500px){
-    .navbar-container input[type="checkbox"]:checked ~ .logo{
-        display: none;
-    }
 }
 
 .preloader {
