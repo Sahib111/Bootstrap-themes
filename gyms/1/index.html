@@ -30,8 +30,8 @@ display:block;
 background:#fff;
 }
 
-.preloader::after {
-content:"Loading...";
+.preloader::before {
+content:"";
 z-index:1000;
 position:absolute;
 width:100px;
@@ -81,7 +81,7 @@ padding:3px;
 
 <preloader>
 <div class="preloader">
-<div class="text-white py-1 px-1"></div>
+<div class="text-dark py-1 px-1">Loading</div>
 </div>
 </preloader>
 
