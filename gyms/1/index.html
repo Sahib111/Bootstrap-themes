@@ -22,14 +22,24 @@
 
 .preloader {
 position: fixed;
-width: 100%;
-height: 100%;
+width: 200px;
+height: 200px;
 z-index: 1000;
 overflow: visible;
 background:#fff url("./img/dumbbell-solid.svg") no-repeat center center;
 display:block;
 }
 
+.preloader::before {
+content:"";
+z-index:-8;
+position:absolute;
+width:100vw;
+height:100vh;
+top:0;
+left:0;
+background:#fff;
+}
 
 .startup {
 display:block;
