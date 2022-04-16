@@ -67,6 +67,22 @@
     transform: rotate(45deg) translateY(-13px) translateX(2px);
 }
 
+.opacityanimate {
+animation: oa 0.5s infinite;
+}
+
+@keyframes oa {
+0%{ opacity:1;}
+50%{ opacity:0.5;}
+100%{ opacity:1;}
+}
+
+@-webkit-keyframes oa {
+0%{ opacity:1;}
+50%{ opacity:0.5;}
+100%{ opacity:1;}
+}
+
 .preloader {
 position:fixed;
 width: 100%;
@@ -144,8 +160,8 @@ padding:3px;
 <body>
 
 <preloader>
-<div class="preloader">
-<div class="position-absolute top-50 start515 translate-middle text-dark py-1 px-1 display-6 placeholder-glow">Loading...</div>
+<div class="preloader opacityanimate">
+<div class="position-absolute top-50 start515 translate-middle text-dark py-1 px-1 display-6">Loading...</div>
 </div>
 </preloader>
 
