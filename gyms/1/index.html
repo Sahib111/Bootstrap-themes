@@ -51,19 +51,19 @@
     background: white;
 }
 /* BURGER 1 */
-.burger-strip div:first-child {
+.burger-strip div:first-child, .strip input:unchecked {
     width: 16px;
 }
-.burger-strip div:last-child {
+.burger-strip div:last-child, .strip input:unchecked {
     width: 28px;
 }
-.burger:hover .burger-strip div:first-child {
+.burger:hover .burger-strip div:first-child, .strip input:checked{
     transform: rotate(45deg) translateY(1px) translateX(5px);
 }
-.burger:hover .burger-strip div:nth-child(2) {
+.burger:hover .burger-strip div:nth-child(2), .strip input:checked{
     transform: rotate(-45deg);
 }
-.burger:hover .burger-strip div:last-child {
+.burger:hover .burger-strip div:last-child, .strip input:checked {
     transform: rotate(45deg) translateY(-13px) translateX(2px);
 }
 
@@ -135,9 +135,7 @@ padding:3px;
 <navbar>
  <div class="burger">
             <div class="strip burger-strip">
-                <div></div>
-                <div></div>
-                <div></div>
+                <input></input><input></input><input></input>
             </div>
         </div>
 </navbar>
