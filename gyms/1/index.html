@@ -39,7 +39,7 @@
 .burger-strip {
     transition: all .3s ease;
 }
-.strip input {
+.strip div{
     height: 3px;
     border-radius: 2px;
     background: rgb(56 56 56);
@@ -47,23 +47,23 @@
     transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
     width: 40px;
 }
-.burger:hover .strip input {
+.burger:hover .strip div {
     background: white;
 }
 /* BURGER 1 */
-.burger-strip input:first-child, .burger input:unchecked {
+.burger-strip div:first-child {
     width: 16px;
 }
-.burger-strip input:last-child, .burger input:unchecked {
+.burger-strip div:last-child {
     width: 28px;
 }
-.burger:hover .burger-strip input:first-child {
+.burger:hover .burger-strip div:first-child {
     transform: rotate(45deg) translateY(1px) translateX(5px);
 }
-.burger:hover .burger-strip input:nth-child(2) {
+.burger:hover .burger-strip div:nth-child(2) {
     transform: rotate(-45deg);
 }
-.burger:hover .burger-strip input:last-child {
+.burger:hover .burger-strip div:last-child {
     transform: rotate(45deg) translateY(-13px) translateX(2px);
 }
 
@@ -135,9 +135,9 @@ padding:3px;
 <navbar>
  <div class="burger">
             <div class="strip burger-strip">
-                <input></input>
-                <input></input>
-                <input></input>
+                <div></div>
+                <div></div>
+                <div></div>
             </input>
         </div>
 </navbar>
