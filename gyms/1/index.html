@@ -20,78 +20,54 @@
 
 <style>
 
-.navbar1 {
-  z-index:500;
-  font-size: 18px;
-  background: #000;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
-}
 
-.main-nav1 {
-  list-style-type: none;
-  display: none;
-}
-
-.nav-links1,
-.logo1 {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.main-nav1 li {
-  text-align: center;
-  margin: 15px auto;
-}
-
-.navbar-toggle1 {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
-}
-
-.active1 {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .navbar1 {
+.burger {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;;
+    cursor: pointer;
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
+    justify-content: center;
     align-items: center;
-  }
-
-  .main-nav1 {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .main-nav1 li {
-    margin: 0;
-  }
-
-  .nav-links1 {
-z-index:500;
-    margin-left: 40px;
-  }
-
-  .navbar-toggle1 {
-    display: none;
-  }
-
-  .logo1:hover,
-  .nav-links1:hover {
-    color: rgba(255, 255, 255, 1);
-  }
+    padding: 5px;
+    transition: all .5s ease;
+    margin: 1em;
 }
-
+.burger:hover {
+    background: rgb(56 56 56);
+}
+.burger-strip {
+    transition: all .5s ease;
+}
+.strip div {
+    height: 3px;
+    border-radius: 2px;
+    background: rgb(56 56 56);
+    margin: 10px;
+    transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 40px;
+}
+.burger:hover .strip div {
+    background: white;
+}
+/* BURGER 1 */
+.burger-strip div:first-child {
+    width: 16px;
+}
+.burger-strip div:last-child {
+    width: 28px;
+}
+.burger:hover .burger-strip div:first-child {
+    transform: rotate(45deg) translateY(1px) translateX(5px);
+}
+.burger:hover .burger-strip div:nth-child(2) {
+    transform: rotate(-45deg);
+}
+.burger:hover .burger-strip div:last-child {
+    transform: rotate(45deg) translateY(-13px) translateX(2px);
+}
 
 .preloader {
 position:fixed;
@@ -159,29 +135,14 @@ padding:3px;
 </preloader>
 
 <navbar>
-  <nav class="navbar1">
-    <span class="navbar-toggle1" id="js-navbar-toggle1">
-       <i class="display-1 fas fa-bars"></i>
-  </span>
-    <a></a>
-    <ul class="main-nav1 bg-dark" id="js-menu1">
-      <li>
-        <a href="#" class="nav-links1">Home</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links1">Products</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links1">About Us</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links1">Contact Us</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links1">Blog</a>
-      </li>
-    </ul>
-  </nav>
+
+ <div class="burger">
+            <div class="strip burger-strip">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
 
 </navbar>
 
@@ -268,14 +229,6 @@ setTimeout(function() {
 $(".preloader").fadeOut(2000);
 },3000);
 });
-
-let mainNav = document.getElementById("js-menu1");
-let navBarToggle = document.getElementById("js-navbar-toggle1");
-
-navBarToggle.addEventListener("click", function() {
-mainNav.classList.toggle("active1");
-});
-
 </script>
 </body>
 </html>
