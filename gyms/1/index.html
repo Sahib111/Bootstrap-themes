@@ -87,12 +87,18 @@ top:40%;
 left:50%;
 transform: translate(-50%, -50%) !important;
 background:url("./img/dumbbell-solid.svg") no-repeat center center;
-animation: preloaded 0.2s infinite;
+animation: preloaded 1s infinite;
 }
 
 @keyframes preloaded {
 0%{ top:40%;}
-50%{ top:35%;}
+50%{ top:38.5%;}
+100%{ top: 40%;}
+}
+
+@-webkit-keyframes preloaded {
+0%{ top:40%;}
+50%{ top:38.5%;}
 100%{ top: 40%;}
 }
 
